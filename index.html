@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohammed Nihal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohammed Nihal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/profile1.png" alt="Mohammed Nihal profile picture" style="width: 300px;height: 300px; margin-top: 45px;"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohammed Nihal</h1>
+        <p class="section__text__p2">UI/UX Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mohammed-nihal-532a68286/'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/__nihal1_/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/nihal behance (1).png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        
+          <div class="text-container">
+            <p class="para">
+              Hi I'm Mohammed Nihal, As a budding UI/UX Designer and Front-end
+              developer, I bring a fresh perspective and a hunger to innovate in 
+              the digital design space. Passionate about creating class User-friendly
+              experiences, I'm excited to embark on a journey of transforming ideas
+              into visually stunning and intuitively engaging design and i also expertize
+              on HTML,CSS and JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Services</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container2 color-container">
+            <div class="article-container2">
+              <img
+                src="assets/art-palette-svgrepo-com (1).png"
+                alt="Project 1"
+                class="service-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UI/UX Designing</h2>
+            <h3 class="para1"  >Expert services to enhance user experiences and interface design, ensuring intuitive navigation and visually engaging digital products.</h3>
+           
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container2">
+              <img
+                src="assets/Untitled-2.png"
+                alt="Project 2"
+                class="service-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web Developing</h2>
+            <h3 class="para1" >Provide comprehensive services encompassing the creation, optimization, and maintenance of websites, delivering tailored solutions to meet clients' diverse needs and technological requirements.</h3>
+            
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container2">
+              <img
+                src="assets/mobile-phone-svgrepo-com.png"
+                alt="Project 3"
+                class="service-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">App Developing</h2>
+            <h3 class="para1">Specialize in crafting innovative mobile applications tailored to clients' specifications, leveraging cutting-edge technologies to deliver seamless user experiences across various platforms.</h3>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <br><br><br><br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/hoof.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.behance.net/gallery/181734699/E-COMMERCE-SHOE-SHOPPING-APP-UI-DESIGN-MOBILE-UI'"
+              >
+                View more
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/Instagram post - 1.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.behance.net/gallery/187069149/O-Dating-Application-UIUX-Case-Study'"
+              >
+                View more
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/gen.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+             
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.behance.net/gallery/192230895/Warehouse-Inventory-Application-UI-Gen-'"
+              >
+                View more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <br><br><br><br>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">nihalnazer67@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mohammed-nihal-532a68286/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mohammed Nihal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
